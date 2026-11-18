@@ -1,0 +1,43 @@
+     Running unittests src/lib.rs (target/debug/deps/amm-f0cf86f294468d48)
+running 9 tests
+test curve::tests::division_by_zero_and_overflow_return_none ... ok
+test curve::tests::fee_rounds_up_and_protocol_share_rounds_down ... ok
+test curve::tests::library_precision_is_a_multiplier_not_decimals ... ok
+test curve::tests::library_skips_the_fee_on_y_to_x_swaps ... ok
+test curve::tests::slide_example_k_600 ... ok
+test curve::tests::lp_math ... ok
+test curve::tests::swap_matches_library_or_is_one_unit_lower ... ok
+test curve::tests::swap_output_rounds_down ... ok
+test test_id ... ok
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+     Running tests/test_amm.rs (target/debug/deps/test_amm-bb87c7be1e09fdd2)
+running 25 tests
+test authority_updates_fees_and_the_new_fee_applies ... ok
+test deposit_above_max_fails_6001_slippage ... ok
+test deposit_with_wrong_mint_fails_2001_has_one ... ok
+test deposit_zero_fails_6000 ... ok
+test first_deposit_below_min_lp_fails_6001_slippage ... ok
+test first_deposit_mints_sqrt_xy_lp ... ok
+test initialize_creates_config_vaults_lp_mint_and_treasury ... ok
+test initialize_with_identical_mints_fails ... ok
+test initialize_with_fee_above_max_fails_6003 ... ok
+test non_authority_cannot_update_fees_or_lock_2001 ... ok
+test locked_pool_blocks_deposit_and_swap_6002_but_not_withdraw ... ok
+test second_deposit_keeps_the_ratio_and_rounds_up ... ok
+test slide_example_k_600_without_fees ... ok
+test swap_below_min_out_fails_6001_slippage ... ok
+test swap_on_empty_pool_fails_6005_no_liquidity ... ok
+test swap_x_to_y_splits_fee_between_pool_and_treasury ... ok
+test swap_with_wrong_mint_fails_2014_token_mint ... ok
+test swap_y_to_x_charges_the_fee_too ... ok
+test swap_zero_fails_6000 ... ok
+test update_fees_out_of_range_fails_6003 ... ok
+test withdraw_below_min_fails_6001_slippage ... ok
+test withdraw_everything_empties_the_pool ... ok
+test withdraw_more_lp_than_owned_fails_token_insufficient_funds ... ok
+test withdraw_returns_pro_rata_share_including_earned_fees ... ok
+test withdraw_zero_fails_6000 ... ok
+test result: ok. 25 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 7.44s
+   Doc-tests amm
+running 0 tests
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
