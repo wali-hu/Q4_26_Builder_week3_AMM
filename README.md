@@ -12,6 +12,8 @@ The design follows the class reference [ShrinathNR/amm_q2_26](https://github.com
 
 **33 tests pass**: 8 math unit tests in `curve.rs` (including comparisons with the `constant-product-curve` crate) and 25 LiteSVM integration tests. Full output: [`test-output.txt`](test-output.txt).
 
+![All tests passing](screenshots/tests-passing.png)
+
 ## Run it
 
 ```bash
